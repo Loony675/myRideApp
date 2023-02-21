@@ -11,14 +11,12 @@ export default function PresentationScreen({ navigation }) {
       .then((dataRetrieved) => dataRetrieved.json())
       .then((data2) => {
         if (data2.result) {
-          console.log("DATA 2 ==>", data2);
           setTest(data2.listMoto);
         } else {
           console.log("no data");
         }
       });
   }, [setTest]);
-  console.log(test);
   const testMap = test.map((data, i) => {
     return (
       <View key={i} style={styles.retrieved}>

@@ -25,7 +25,7 @@ export default function HomeScreen({navigation}) {
           </Text>
         </View>
         <View style={styles.container2}>
-          <TouchableOpacity onPress={() => navigation.navigate('TabNavigator', {screen:'Main'})}>
+          <TouchableOpacity onPress={() => navigation.navigate('Login')}>
             <Text style={{ fontSize: "40", color: "rgb(220, 220, 220)", fontWeight: "600" }}>
               Commencer
             </Text>
@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
   },
   container2: {
     backgroundColor: "black",
-    marginTop: "100%",
+    marginTop: "80%",
     marginLeft: "12%",
     justifyContent: "center",
     alignItems: "center",
