@@ -26,6 +26,7 @@ export default function PresentationScreen({ navigation }) {
         <Text>{data.millesime} </Text>
         <Text>{data.cylindree} </Text>
         <Text>{data.modele} </Text>
+        <Text>{data.categorie}</Text>
       </View>
     );
   });
