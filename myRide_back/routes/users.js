@@ -17,7 +17,7 @@ router.post("/signUp", function (req, res) {
       });
       newUser.save().then((newUser) => {
         User.find().then((data) => {
-          res.json({ result: true, email: newUser.email });
+          res.json({ result: true, token: newUser.token, username: newUser.username });
         });
       });
     }

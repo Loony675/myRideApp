@@ -20,9 +20,8 @@ export default function LoginScreen({ navigation }) {
   const dispatch = useDispatch();
 
   const handleRegister = () => {
-    console.log('=====>>',emailSU, usernameSU, passwordSU);
-    fetch("http://localhost:3000/users/signUp", {
-    // fetch('https://my-ride-app-vercel-be.vercel.app/users/signUp', {
+    // fetch("http://localhost:3000/users/signUp", {
+    fetch('https://my-ride-app-vercel-be.vercel.app/users/signUp', {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
